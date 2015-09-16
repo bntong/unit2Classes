@@ -1,7 +1,7 @@
 
 
 /**
- * The class Car has a certain fuel efficiency and a certain amount of fuel in the gas tank. A Car may be driven a specified distance which redues the amount of gas in the tank.
+ * The class Car has a certain fuel efficiency and a certain amount of fuel in the gas tank. A Car may be driven a specified distance which reduces the amount of gas in the tank.
  * 
  * @author Tong 
  * @version 10 September 2015
@@ -21,7 +21,7 @@ public class Car
     {
         // initialise instance variables
         fuelInTank = 0.0;
-        fuelEfficiency = fuelEfficiency;
+        fuelEfficiency = this.fuelEfficiency;
     }
 
     /**
@@ -29,7 +29,7 @@ public class Car
      *
      * @pre       the specified distance cannot consume more than the fuel available in the tank.
      *              (what the method assumes about the method's parameters and class's state)
-     * @param     distance      the spcified distance to drive in miles
+     * @param     distance      the specified distance to drive in miles
      */
     public void drive( double distance )
     {  
@@ -45,7 +45,8 @@ public class Car
     {
         return fuelInTank;
     }
-    
+    
+
     /**
      * Increments the fuel stored in the car's tank by the specified amount in gallons.
      *
