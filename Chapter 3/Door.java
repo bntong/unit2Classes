@@ -20,54 +20,62 @@ public class Door
     public Door( String state )
     {
         // initialise instance variables
-        name = this.getName;
-        state = this.getState;
+        name = this.getName();
+        state = this.getState();
         
     }
 
     /**
-     *                
-     * @post    postconditions for the method
+     *  This method gets the name of the door                 
+     * @post    gets the name of the door
      *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * @return   returns the name of the door
      */
     public String getName()
     {
         // put your code here
         return this.name;
     }
-    
+    
+
     /**
-     * An example of a method - replace this comment with your own
-     *  that describes the operation of the method
+     * This method sets the name of the door
      *
-     * @post    postconditions for the method
+     * @post    this method sets the name of the door
      *          (what the method guarantees upon completion)
      * @param   newName   the new name of the door
-     * @return  description of the return value
      */
     public void setName(String newName)
     {
         // put your code here
         this.name = newName;
     }
-    
+    
+
     /**
-     * An example of a method - replace this comment with your own
-     *  that describes the operation of the method
+     * This method sets the state of the door
      *
-     * @pre     preconditions for the method
-     *          (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
+     * @post    this method sets the state of the door
      *          (what the method guarantees upon completion)
-     * @param   y   description of parameter y
-     * @return  description of the return value
+     * @param   newState   the new state of the door
      */
     public void setState(String newState)
     {
         // put your code here
         this.state = newState;
+    }
+    
+    /**
+     * This method gets the state of the door
+     *
+     * @post    this method gets the state of the door
+     *          (what the method guarantees upon completion)
+     * @return  returns the state of the door
+     */
+    public String getState()
+    {
+        // put your code here
+        return this.state;
     }
 
 }
