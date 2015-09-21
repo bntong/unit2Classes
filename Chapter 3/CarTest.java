@@ -69,9 +69,9 @@ public class CarTest
     public void testDrive()
     {
         Car car = new Car( 50.0 );
-        car.addGas(10.0 );
+        car.addGas( 10.0 );
         car.drive( 200.0 );
-        assertEquals( 60, car.getGasInTank(), 1e-6);
+        assertEquals( 6.0, car.getGasInTank(), 1e-6);
         car.drive( 25.0 );
         assertEquals( 5.5, car.getGasInTank(), 1e-6);
     }

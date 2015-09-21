@@ -20,8 +20,8 @@ public class Door
     public Door( String state )
     {
         // initialise instance variables
-        name = this.getName();
-        state = this.getState();
+        this.name() = "Front";
+        this.state() = "Open";
         
     }
 
@@ -64,7 +64,8 @@ public class Door
         // put your code here
         this.state = newState;
     }
-    
+    
+
     /**
      * This method gets the state of the door
      *

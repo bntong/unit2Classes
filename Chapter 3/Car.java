@@ -21,7 +21,7 @@ public class Car
     {
         // initialise instance variables
         fuelInTank = 0.0;
-        fuelEfficiency = this.fuelEfficiency;
+        this.fuelEfficiency = fuelEfficiency;
     }
 
     /**

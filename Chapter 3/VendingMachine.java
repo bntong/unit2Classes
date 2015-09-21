@@ -18,40 +18,36 @@ public class VendingMachine
     /**
      * Default constructor for objects of class VendingMachine
      */
-    public VendingMachine()
+    public VendingMachine(int cans)
     {
         // initialise instance variables
-        numCans = 10;
+        numCans = cans;
         numTokens = 0;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
+     * A method that inserts tokens into the vending machine
      *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
+     * @post    inserts tokens into the vending machine
      *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * @param    token    specifies the amount of tokens inserted into the vending machine
      */
-    public void insertToken()
+    public void insertToken(int token)
     {
         // put your code here
-        numTokens +=1;
-        numCans -=1;
+        numTokens += token;
+        numCans -= token;
     }
-    
+    
+
     /**
-     * An example of a method - replace this comment with your own
-     *  that describes the operation of the method
+     * A method that fills up the vending machine with cans
      *
-     * @pre     preconditions for the method
+     * @pre     Cans must be positive
      *          (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
+     * @post    fills up the vending machine with cans
      *          (what the method guarantees upon completion)
-     * @param   y   description of parameter y
+     * @param   cans   specifies the amount of cans to be filled into the vending machine
      * @return  description of the return value
      */
     public int fillUp(int cans)
@@ -60,39 +56,33 @@ public class VendingMachine
         numCans += cans;
         return numCans;
     }
-    
+    
+
     /**
-     * An example of a method - replace this comment with your own
-     *  that describes the operation of the method
+     * A method that gets the amount of cans in the vending machine
      *
-     * @pre     preconditions for the method
-     *          (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
+     * @post    gets the amount of cans in the vending machine
      *          (what the method guarantees upon completion)
-     * @param   y   description of parameter y
-     * @return  description of the return value
+     * @return  returns the amount of cans currently in the vending machine
      */
     public int getCanCount()
     {
         // put your code here
         return numCans;
     }
-    
+    
+
     /**
-     * An example of a method - replace this comment with your own
-     *  that describes the operation of the method
+     * A method that gets the amount of tokens currently in the vending machine
      *
-     * @pre     preconditions for the method
-     *          (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
+     * @post    gets the amount of tokens currently in the vending machine
      *          (what the method guarantees upon completion)
-     * @param   y   description of parameter y
-     * @return  description of the return value
+     * @return  returns the number of tokens currently in the vending machine
      */
     public int getTokenCount()
     {
         // put your code here
-        return numCans;
+        return numTokens;
     }
 
 }
