@@ -20,7 +20,7 @@ public class TargetComponent extends JComponent
         int x = getWidth()- 60;
         int y = getHeight()-30;
         
-        Target target2 = new Car(x , y);
+        Target target2 = new Target(x , y);
         
         target1.draw(g2);
         target2.draw(g2);
