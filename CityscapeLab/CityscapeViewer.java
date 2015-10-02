@@ -1,4 +1,5 @@
 import javax.swing.JFrame;
+import java.awt.Color;
 
 /**
  * Class that contains the main method for the program and creates the frame containing the component.
@@ -20,8 +21,9 @@ public class CityscapeViewer
         // create and configure the frame (window) for the program
         JFrame frame = new JFrame();
         
-        frame.setSize(800 /* x */, 600 /* y */);
+        frame.setSize(800 /* x */, 550 /* y */);
         frame.setTitle("Cityscape");
+        frame.getContentPane().setBackground( Color.WHITE );
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         // use the Scanner class to prompt the user for some configurable aspect of the cityscape

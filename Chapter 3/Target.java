@@ -37,17 +37,17 @@ public class Target
        int  xValue = 10;
        int  yValue = 10;
         
-        Ellipse2D.Double drawWhite1 = new Ellipse2D.Double(xLeft + 35, yTop + 35, 110, 110);
-        Ellipse2D.Double drawBlack1 = new Ellipse2D.Double(xLeft + xValue, yTop + 40, 100, 100);
-        Ellipse2D.Double drawWhite2 = new Ellipse2D.Double(xLeft + 45, yTop + 45, 90, 90);
+       Ellipse2D.Double drawWhite1 = new Ellipse2D.Double(xLeft + 35, yTop + 35, 110, 110);
+       Ellipse2D.Double drawBlack1 = new Ellipse2D.Double(xLeft + xValue, yTop + 40, 100, 100);
+       Ellipse2D.Double drawWhite2 = new Ellipse2D.Double(xLeft + 45, yTop + 45, 90, 90);
         
-        g2.draw(drawWhite1);
-        g2.draw(drawBlack1);
-        g2.setColor(Color.BLACK);
-        g2.fill(drawBlack1);
-        g2.draw(drawWhite2);
-        g2.setColor(Color.WHITE);
-        g2.fill(drawWhite2);
+       g2.draw(drawWhite1);
+       g2.draw(drawBlack1);
+       g2.setColor(Color.BLACK);
+       g2.fill(drawBlack1);
+       g2.draw(drawWhite2);
+       g2.setColor(Color.WHITE);
+       g2.fill(drawWhite2);
 
     }
 
