@@ -35,13 +35,19 @@ public class Building
     public void draw( Graphics2D g2)
     {
         // put your code here
-        int xValue = 10;
+        int xValue = 100;
+        int yValue = 10;
         
-        Rectangle body = new Rectangle(xLeft , yTop + 100 , 60 , 100);
-        
+        Rectangle body = new Rectangle(xLeft, yTop + 10 , 100, 190);
         g2.draw(body);
         g2.setColor(Color.BLACK);
         g2.fill(body);
+        
+        Rectangle body1 = new Rectangle(xLeft, yTop + 10 , 100, 190);
+        g2.draw(body1);
+        g2.setColor(Color.BLACK);
+        g2.fill(body1);
     }
+    }
+    
 
-}
