@@ -45,7 +45,7 @@ public class Sun
         Ellipse2D.Double drawSun = new Ellipse2D.Double(xLeft + 35 , yTop + 35 , 50 , 50);
         
         g2.draw(drawSun);
-        g2.setColor(Color.RED);
+        g2.setColor(Color.YELLOW);
         g2.fill(drawSun);
     }
 

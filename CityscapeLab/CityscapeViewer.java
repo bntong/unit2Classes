@@ -2,6 +2,8 @@ import javax.swing.JFrame;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Graphics;
+import java.util.Scanner;
+import java.awt.GradientPaint;
 
 /**
  * Class that contains the main method for the program and creates the frame containing the component.
@@ -25,12 +27,12 @@ public class CityscapeViewer
         
         frame.setSize(800 /* x */, 550 /* y */);
         frame.setTitle("Cityscape");
-        frame.getContentPane().setBackground( Color.GRAY );
+        frame.getContentPane().setBackground(Color.BLACK);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         // use the Scanner class to prompt the user for some configurable aspect of the cityscape
         // ...
-        
+         
         
         
         // a frame contains a single component; create the Cityscape component and add it to the frame

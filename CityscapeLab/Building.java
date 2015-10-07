@@ -39,10 +39,14 @@ public class Building
         int yValue = 10;
         
         Rectangle body = new Rectangle(xLeft+35, yTop, 100, 200);
+        Rectangle body1 = new Rectangle(xLeft + 200 , yTop - 100 , 100 , 300);
+        
         g2.draw(body);
         g2.setColor(Color.BLACK);
         g2.fill(body);
-        
+        g2.draw(body1);
+        g2.setColor(Color.BLACK);
+        g2.fill(body1);
     }
     }
     
